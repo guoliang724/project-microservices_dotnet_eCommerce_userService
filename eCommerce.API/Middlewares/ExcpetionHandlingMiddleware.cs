@@ -33,7 +33,7 @@ namespace eCommerce.API.Middlewares
 
 
                 httpContext.Response.StatusCode = 500;
-                await httpContext.Response.WriteAsJsonAsync(new { Message = ex.Message, Type = ex.GetType().ToString()});
+                await httpContext.Response.WriteAsJsonAsync(new { Message = ex.Message, Type = ex.GetType().ToString() });
             }
         }
     }

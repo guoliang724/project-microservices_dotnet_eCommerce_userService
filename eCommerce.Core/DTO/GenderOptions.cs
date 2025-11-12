@@ -1,4 +1,4 @@
-﻿namespace eCommerce.API.DTO
+﻿namespace eCommerce.Core.DTO
 {
     public enum GenderOptions
     {
