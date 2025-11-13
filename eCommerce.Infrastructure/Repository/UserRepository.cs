@@ -1,4 +1,5 @@
-﻿using eCommerce.Core.Entities;
+﻿using eCommerce.Core.DTO;
+using eCommerce.Core.Entities;
 using eCommerce.Core.RepositoryContracts;
 
 namespace eCommerce.Infrastructure.Repository
@@ -18,7 +19,9 @@ namespace eCommerce.Infrastructure.Repository
             {
                 UserID = Guid.NewGuid(),
                 Email = email,
-                Password = password
+                Password = password,
+                PersonName = "Person name",
+                Gender = GenderOptions.Male.ToString()
             };
         }
     }

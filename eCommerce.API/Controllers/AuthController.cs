@@ -23,7 +23,7 @@ namespace eCommerce.API.Controllers
 
             var authResponse = await _userService.Register(registerRequest);
 
-            if (authResponse == null || !authResponse.Sucess)
+            if (authResponse == null || !authResponse.Success)
             {
                 return BadRequest("Registration failed");
             }
@@ -38,7 +38,7 @@ namespace eCommerce.API.Controllers
 
             AuthenticationResponse? authentication = await _userService.Login(loginRequest);
 
-            if (authentication == null || !authentication.Sucess)
+            if (authentication == null || !authentication.Success)
             {
                 return Unauthorized(authentication);
             }
