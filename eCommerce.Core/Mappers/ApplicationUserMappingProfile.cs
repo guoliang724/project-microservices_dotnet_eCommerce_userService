@@ -10,6 +10,7 @@ namespace eCommerce.Core.Mappers
         public ApplicationUserMappingProfile()
         {
             CreateMap<ApplicationUser, AuthenticationResponse>();
+            CreateMap<RegisterRequest, ApplicationUser>();
         }
     }
 }
